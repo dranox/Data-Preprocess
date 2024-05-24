@@ -1,7 +1,7 @@
 # Data-Preprocess
 Hands-on exploring data through the application of support tools provided by the open-source software WEKA and Hands-on preprocessing data in Python.
 
-1. Install WEKA (0.5 points)
+1. Install WEKA
 
 - Download WEKA from [https://waikato.github.io/weka-wiki/downloading_weka/ ](https://waikato.github.io/weka-wiki/downloading_weka/)(Note: In the experimental process with Weka, if you have an out-of-memory error, please refer to the fol- lowing link to solve: <https://waikato.github.io/weka-wiki/faqs/OutOfMemoryException/>
 - WEKA can be used in three ways – via the GUI, a Java API, and a command line interface. The GUI has three components Explorer, Experimenter, and Knowledge Flow, apart from a simple command line interface. In this lab, students will use the Explorer function to perform explore data. (Note: If you are interested in API, you can refer to the tutorial in this link [https://www.youtube.com/watch?v=q3Gf6kqaJWA)](https://www.youtube.com/watch?v=q3Gf6kqaJWA)
@@ -53,7 +53,7 @@ Similarly, you will also load the data file namely credit-g.arff into the WEKA e
 
 3. Preprocessing Data in Python
 
-The program must have the following functions (0.5 points for each function):
+The program must have the following functions:
 
 1. Extract columns with missing values
 1. Count the number of lines with missing data.
@@ -65,13 +65,15 @@ The program must have the following functions (0.5 points for each function):
 1. Performing addition, subtraction, multiplication, and division between two numerical attributes. Command line arguments are defined by yourself. Suggested example:
 
 First function:
-
+```bash 
 python3 list-missing.py data.csv
+```
 
 Third function:
-
+```bash 
 python3 impute.py data.csv --method=mean --columns length price --out=result.csv
+```
 
-When your program is ready, let’s test them with house-prices.csv data set. Specifically, you will test each function in this data set with various cases (For example: filling in missing values for many attributes)
+Let’s test them with house-prices.csv data set. Specifically, I will test each function in this data set with various cases (For example: filling in missing values for many attributes)
 
-Note: Can use the library to read CSV files and process the command line arguments. All the rest must be installed by themselves.
+Note: Use the library to read CSV files and process the command line arguments. All the rest must be installed by themselves.
